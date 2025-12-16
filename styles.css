@@ -73,9 +73,11 @@ img {
 }
 
 .logo-image {
-  height: 56px;
   width: auto;
+  height: 56px;
   display: block;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .logo-text {
