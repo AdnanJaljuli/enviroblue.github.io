@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-labelledby="title desc">
+  <title id="title">Enviro Blue logo</title>
+  <desc id="desc">A blue water drop emerging from a green leaf with Enviro Blue wordmark.</desc>
+  <style>
+    text { font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+  </style>
+  <path fill="#6ED4FF" d="M160 18C105 63 82 138 160 219c78-81 55-156 0-201Z"/>
+  <path fill="#68D849" d="M160 351c-70-64-70-149 0-176c70 27 70 112 0 176Z"/>
+  <rect x="152" y="211" width="16" height="96" fill="#45B437" rx="3"/>
+  <path fill="#FFFFFF" d="M200 135a12 12 0 0 1-12-12c0-26.9-8.9-50.4-26.2-69.8a12 12 0 1 1 17.6-16.3C203.3 62.7 212 90 212 123a12 12 0 0 1-12 12Z"/>
+  <path fill="#4FB634" d="M160 351c-49-57.8-56-120.5-21.1-139.6L160 219l21.1-7.6C215 232 209 293.2 160 351Z" opacity=".12"/>
+  <text x="190" y="156" fill="#68D849" font-size="70" font-weight="600">Enviro</text>
+  <text x="190" y="228" fill="#6ED4FF" font-size="70" font-weight="500">Blue</text>
+</svg>
