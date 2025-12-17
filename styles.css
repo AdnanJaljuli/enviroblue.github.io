@@ -285,7 +285,15 @@ img {
   border: 1px solid rgba(35, 170, 233, 0.18);
   box-shadow: 0 10px 24px rgba(15, 35, 61, 0.05);
   display: grid;
-  gap: 6px;
+  gap: 10px;
+}
+
+.client-logo {
+  width: 80px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 0;
+  margin-bottom: 4px;
 }
 
 .client-name {
