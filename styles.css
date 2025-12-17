@@ -284,20 +284,22 @@ img {
   padding: 16px;
   border: 1px solid rgba(35, 170, 233, 0.18);
   box-shadow: 0 10px 24px rgba(15, 35, 61, 0.05);
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .client-logo {
-  width: 80px;
-  height: 50px;
+  width: 100%;
+  height: 80px;
   object-fit: contain;
   border-radius: 0;
-  margin-bottom: 4px;
+  margin-bottom: auto;
 }
 
 .client-name {
   margin: 0;
+  margin-top: auto;
+  padding-top: 12px;
   font-weight: 700;
   color: var(--blue-800);
 }
