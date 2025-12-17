@@ -479,11 +479,11 @@ img {
 }
 
 .reliability {
-  background: linear-gradient(135deg, #f8fdff 0%, #fdfefc 100%);
+  background: radial-gradient(circle at top left, #fdfefc 0%, #e8f8ff 40%, #e5f8e9 100%);
 }
 
 .reliability .section-title {
-  margin: 8px 0 18px;
+  margin: 8px 0 24px;
   font-size: clamp(24px, 3vw, 32px);
 }
 
@@ -492,19 +492,33 @@ img {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .icon-list li {
   background: var(--white);
   border-radius: var(--radius-md);
-  padding: 14px;
+  padding: 16px 18px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
   align-items: start;
   border: 1px solid rgba(35, 170, 233, 0.14);
   box-shadow: 0 8px 20px rgba(15, 35, 61, 0.05);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+
+.icon-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(15, 35, 61, 0.12);
+  border-color: rgba(104, 216, 73, 0.4);
+  background: linear-gradient(135deg, rgba(232, 248, 255, 0.6), rgba(229, 248, 233, 0.9));
+}
+
+.icon-list-text p {
+  margin: 4px 0 0;
+  color: var(--gray-700);
+  font-size: 14px;
 }
 
 .icon-circle-outline {
@@ -514,9 +528,16 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid var(--blue-600);
-  color: var(--blue-600);
+  border: 2px solid rgba(30, 141, 204, 0.3);
+  background: radial-gradient(circle at 30% 0%, rgba(110, 212, 255, 0.3), rgba(255, 255, 255, 0.9));
+  color: var(--blue-700);
   font-weight: 700;
+}
+
+@media (min-width: 860px) {
+  .reliability .icon-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .timeline {
