@@ -818,6 +818,37 @@ img {
 
 .equipment-grid {
   margin-top: 16px;
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+}
+
+.equipment-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.equipment-grid::-webkit-scrollbar-track {
+  background: rgba(211, 220, 226, 0.3);
+  border-radius: 4px;
+}
+
+.equipment-grid::-webkit-scrollbar-thumb {
+  background: rgba(35, 170, 233, 0.4);
+  border-radius: 4px;
+}
+
+.equipment-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(35, 170, 233, 0.6);
+}
+
+.equipment-grid .equipment-card {
+  flex: 0 0 320px;
+  min-width: 320px;
+  max-width: 320px;
 }
 
 .equipment-card .project-image img {
@@ -855,8 +886,10 @@ img {
     height: 48px;
   }
 
-  .equipment-grid {
-    grid-template-columns: 1fr;
+  .equipment-grid .equipment-card {
+    flex: 0 0 280px;
+    min-width: 280px;
+    max-width: 280px;
   }
 
   .contact-wrapper {
