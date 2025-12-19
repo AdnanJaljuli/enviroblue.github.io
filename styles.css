@@ -793,6 +793,62 @@ img {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.equipment-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 24px;
+}
+
+.equipment-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid rgba(104, 216, 73, 0.16);
+  box-shadow: 0 10px 24px rgba(15, 35, 61, 0.06);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.equipment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(15, 35, 61, 0.12);
+}
+
+.equipment-card h3 {
+  margin: 0 0 16px;
+  color: var(--blue-800);
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.equipment-card h4 {
+  margin: 16px 0 8px;
+  color: var(--blue-700);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.equipment-card h4:first-of-type {
+  margin-top: 0;
+}
+
+.equipment-subsection {
+  margin-top: 16px;
+}
+
+.equipment-subsection:first-child {
+  margin-top: 0;
+}
+
+.equipment-card .bullet-list {
+  margin-top: 8px;
+}
+
+.equipment-card .bullet-list .bullet-list {
+  margin-left: 16px;
+  margin-top: 4px;
+}
+
 @media (max-width: 720px) {
   .nav {
     display: none;
@@ -808,6 +864,10 @@ img {
 
   .logo-image {
     height: 48px;
+  }
+
+  .equipment-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-wrapper {
